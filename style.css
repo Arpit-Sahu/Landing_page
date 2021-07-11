@@ -1,0 +1,103 @@
+/* Info for developers- The classes starting with a capital letter are for
+    customization and the css is written here. The other classes starting with a small letter
+    are provided by bootstrap 5.
+*/
+
+.Gradient{
+    
+    background: -webkit-linear-gradient(to right, #FA9746, #FC801A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FA9746, #FC801A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+
+}
+
+.TextColor{
+    color: #FC801A;
+}
+
+
+.active{
+    color: #FC801A !important;
+}
+
+@media (max-width: 600px){
+    .AlignCenter{
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+}
+
+
+/* Loader */
+.Loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #242f3f;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Loader {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 4px solid #Fff;
+    animation: loader 2s infinite ease;
+  }
+
+  .Loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
+
+  @keyframes loader {
+    0% {
+      transform: rotate(0deg);
+    }
+    
+    25% {
+      transform: rotate(180deg);
+    }
+    
+    50% {
+      transform: rotate(180deg);
+    }
+    
+    75% {
+      transform: rotate(360deg);
+    }
+    
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes loader-inner {
+    0% {
+      height: 0%;
+    }
+    
+    25% {
+      height: 0%;
+    }
+    
+    50% {
+      height: 100%;
+    }
+    
+    75% {
+      height: 100%;
+    }
+    
+    100% {
+      height: 0%;
+    }
+  }
